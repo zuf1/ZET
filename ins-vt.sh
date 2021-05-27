@@ -14,7 +14,7 @@ chronyc sourcestats -v
 chronyc tracking -v
 date
 # install v2ray
-wget https://raw.githubusercontent.com/syntax-er0/AutoScriptSSH/main/go.sh && chmod +x go.sh && ./go.sh
+wget https://raw.githubusercontent.com/zuf1/ZET/main/go.sh && chmod +x go.sh && ./go.sh
 rm -f /root/go.sh
 mkdir /root/.acme.sh
 curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
@@ -507,22 +507,22 @@ systemctl start v2ray@trojan.service
 systemctl restart v2ray
 systemctl enable v2ray
 cd /usr/bin
-wget -O addws "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/addws.sh"
-wget -O addvless "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/addvless.sh"
-wget -O addtr "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/addtr.sh"
-wget -O delws "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/delws.sh"
-wget -O delvless "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/delvless.sh"
-wget -O deltr "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/deltr.sh"
-wget -O cekws "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/cekws.sh"
-wget -O cekvless "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/cekvless.sh"
-wget -O cektr "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/cektr.sh"
-wget -O renewws "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/renewws.sh"
-wget -O renewvless "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/renewvless.sh"
-wget -O renewtr "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/renewtr.sh"
-wget -O xp-ws "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/xp-ws.sh"
-wget -O xp-tr "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/xp-tr.sh"
-wget -O xp-vless "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/xp-vless.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/developersometechssh/testfilerepo/main/cert.sh"
+wget -O addws "https://raw.githubusercontent.com/zuf1/ZET/main/addws.sh"
+wget -O addvless "https://raw.githubusercontent.com/zuf1/ZET/main/addvless.sh"
+wget -O addtr "https://raw.githubusercontent.com/zuf1/ZET/main/addtr.sh"
+wget -O delws "https://raw.githubusercontent.com/zuf1/ZET/main/delws.sh"
+wget -O delvless "https://raw.githubusercontent.com/zuf1/ZET/main/delvless.sh"
+wget -O deltr "https://raw.githubusercontent.com/zuf1/ZET/main/deltr.sh"
+wget -O cekws "https://raw.githubusercontent.com/zuf1/ZET/main/cekws.sh"
+wget -O cekvless "https://raw.githubusercontent.com/zuf1/ZET/main/cekvless.sh"
+wget -O cektr "https://raw.githubusercontent.com/zuf1/ZET/main/cektr.sh"
+wget -O renewws "https://raw.githubusercontent.com/zuf1/ZET/main/renewws.sh"
+wget -O renewvless "https://raw.githubusercontent.com/zuf1/ZET/main/renewvless.sh"
+wget -O renewtr "https://raw.githubusercontent.com/zuf1/ZET/main/renewtr.sh"
+wget -O xp-ws "https://raw.githubusercontent.com/zuf1/ZET/main/xp-ws.sh"
+wget -O xp-tr "https://raw.githubusercontent.com/zuf1/ZET/main/xp-tr.sh"
+wget -O xp-vless "https://raw.githubusercontent.com/zuf1/ZET/main/xp-vless.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/zuf1/ZET/main/cert.sh"
 chmod +x addws
 chmod +x addvless
 chmod +x addtr

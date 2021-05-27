@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 # Load params
 source /etc/wireguard/params
 source /var/lib/premium-script/ipvps.conf
@@ -79,5 +79,5 @@ AllowedIPs = $CLIENT_ADDRESS/32" >>"/etc/wireguard/$SERVER_WG_NIC.conf"
 	echo -e "==============================="
 	echo -e "Expired On     : $exp"
 	echo -e ""
-	echo -e "By Karlos Geek"
+	echo -e "By ZET TV"
 	rm -f /root/wg0-client-$CLIENT_NAME.conf
