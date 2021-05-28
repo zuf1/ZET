@@ -9,7 +9,7 @@ fi
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-MYIP=$(wget -qO- icanhazip.com);
+MYIP=$(wget -qO- 128.199.121.217);
 echo "Checking VPS"
 IZIN=$( curl https://raw.githubusercontent.com/zuf1/ZET/main/ipvps | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
