@@ -6,22 +6,8 @@ if [ "$(systemd-detect-virt)" == "openvz" ]; then
 echo "OpenVZ tidak didukung"
 exit 1
 fi
-red='\e[1;31m'
-green='\e[0;32m'
-NC='\e[0m'
-MYIP=$(wget -qO- icanhazip.com);
-echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/zuf1/ZET/main/ipvps | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-echo -e "${green}Izin Diterima...${NC}"
-else
-echo -e "${red}Izin ditolak!${NC}";
-echo "Hanya untuk Pengguna Premium"
-rm -f setup.sh
-exit 0
-fi
 mkdir /var/lib/premium-script;
-echo "Ingrese el nombre de host del subdominio VPS, si no está disponible, haga clic en Enter"
+echo "Masukkan nama host subdomain VPS, jika tidak tersedia, klik Enter"
 read -p "Hostname / Domain: " host
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
 wget https://raw.githubusercontent.com/zuf1/ZET/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
