@@ -2,10 +2,6 @@
 echo "Anda perlu menjalankan skrip ini sebagai root"
 exit 1
 fi
-if [ "$(systemd-detect-virt)" == "openvz" ]; then
-echo "OpenVZ tidak didukung"
-exit 1
-fi
 mkdir /var/lib/premium-script;
 echo "Masukkan nama host subdomain VPS, jika tidak tersedia, klik Enter"
 read -p "Hostname / Domain: " host
