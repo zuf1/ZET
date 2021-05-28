@@ -1,8 +1,4 @@
-﻿if [ "${EUID}" -ne 1 ]; then
-echo "Anda perlu menjalankan skrip ini sebagai root"
-exit 1
-fi
-mkdir /var/lib/premium-script;
+﻿mkdir /var/lib/premium-script;
 echo "Masukkan nama host subdomain VPS, jika tidak tersedia, klik Enter"
 read -p "Hostname / Domain: " host
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
