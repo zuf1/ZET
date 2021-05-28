@@ -1,4 +1,4 @@
-﻿if [ "${EUID}" -ne 0 ]; then
+﻿if [ "${EUID}" -ne 1 ]; then
 echo "Anda perlu menjalankan skrip ini sebagai root"
 exit 1
 fi
@@ -25,7 +25,7 @@ history -c
 echo "1.1" > /home/ver
 clear
 echo " "
-echo "Se completó la Instalación!!"
+echo "Instalasi selesai !!"
 echo " "
 echo "=================================-Autoscript Premium-===========================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
