@@ -9,16 +9,6 @@ fi
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-MYIP=$(wget -qO- icanhazip.com);
-echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/zuf1/ZET/main/ipvps | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-echo -e "${green}Izin Diterima...${NC}"
-else
-echo -e "${red}Izin ditolak!${NC}";
-echo "Hanya untuk Pengguna Premium"
-rm -f setup.sh
-exit 0
 fi
 mkdir /var/lib/premium-script;
 echo "Ingrese el nombre de host del subdominio VPS, si no está disponible, haga clic en Enter"
