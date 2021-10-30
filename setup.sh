@@ -1,15 +1,3 @@
-﻿if [ "${EUID}" -ne 0 ]; then
-echo "Anda perlu menjalankan skrip ini sebagai root"
-exit 1
-fi
-if [ "$(systemd-detect-virt)" == "openvz" ]; then
-echo "OpenVZ tidak didukung"
-exit 1
-fi
-red='\e[1;31m'
-green='\e[0;32m'
-NC='\e[0m'
-fi
 mkdir /var/lib/premium-script;
 echo "Ingrese el nombre de host del subdominio VPS, si no está disponible, haga clic en Enter"
 read -p "Hostname / Domain: " host
