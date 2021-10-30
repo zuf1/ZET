@@ -1,7 +1,5 @@
 mkdir /var/lib/premium-script;
-echo "Ingrese el nombre de host del subdominio VPS, si no está disponible, haga clic en Enter"
-read -p "Hostname / Domain: " host
-echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
+echo "Masukkan hostname subdomain VPS, jika tidak tersedia klik Enter"
 wget https://raw.githubusercontent.com/zuf1/ZET/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/zuf1/ZET/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 wget https://raw.githubusercontent.com/zuf1/ZET/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
@@ -21,7 +19,7 @@ history -c
 echo "1.1" > /home/ver
 clear
 echo " "
-echo "Se completó la Instalación!!"
+echo "Instalasi selesai!!"
 echo " "
 echo "=================================-Autoscript Premium-===========================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
