@@ -2,6 +2,27 @@
 #Menu
 clear
 echo -e ""
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city )
+WKT=$(curl -s ipinfo.io/timezone )
+IPVPS=$(curl -s ipinfo.io/ip )
+jam=$(date +"%T")
+hari=$(date +"%A")
+tnggl=$(date +"%d-%B-%Y")
+echo -e "* TIME          : $jam"
+echo -e "* DAY           : $hari"
+echo -e "* DATE          : $tnggl"
+echo -e "* SERVER        : $ISP"
+echo -e "* City          : $CITY"
+echo -e "* IP VPS        : $IPVPS"
+echo -e ""
+echo -e "\e[93m                Autoscript By ZET TV                          "
+echo -e "\e[92m      ##### ###### ######   ###### ### ###             "
+echo -e "\e[92m      ## ##  ##  # # ## #   # ## #  ## ##              "
+echo -e "\e[92m        ##   ####    ##       ##     # #               "
+echo -e "\e[92m       ##    ##      ##       ##     ###               "
+echo -e "\e[92m      ## ##  ## ##   ##       ##     ###               "
+echo -e "\e[92m      ##### ######  ####     ####     #                "
 echo -e "=============================-Menu-============================="
 echo -e "* menu         : List of Main Commands BY ZET TV"
 echo -e ""
